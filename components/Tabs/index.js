@@ -15,16 +15,16 @@ const tabEntry = document.querySelector(".topics");
 
 axios.get("https://lambda-times-backend.herokuapp.com/topics")
     .then(function(response){
-        console.log(response);
+        //console.log(response);
         //console.log(response.data);
-        const topicData = response.data
-        console.log(topicData);
+        const topicData = response.data // this is an object 
+        //console.log(topicData);
 
         const topicDataArr = Object.values(topicData);
-        console.log(topicDataArr);
+        //console.log(topicDataArr);
 
         const useableArr = topicDataArr[0];
-        console.log(useableArr);
+        //console.log(useableArr);
 
         useableArr.forEach(element => {
             tabEntry.appendChild(createTab(element))
