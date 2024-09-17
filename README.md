@@ -30,13 +30,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the DOM?
 
+DOM is a language neutral API between content and a browser. For HTML, it puts content into a tree like object.
+
 2. What is an event?
+
+Events are actions that occur to HTML objects on a web page.
 
 3. What is an event listener?
 
+An eventListener is a method to watch for these events on HTML objects and perform some action once they occur.
+
 4. Why would we convert a NodeList into an Array?
 
+So that we can use .forEach() on the node list.
+
 5. What is a component?
+
+A component is a reusable piece of code that can create HTML objects with JS and append them somewhere on the web page.
+
 
 ### Git Set up
 
